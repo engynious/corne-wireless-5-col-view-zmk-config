@@ -85,17 +85,17 @@
                         display-name = "Nav";
                         bindings = <
                         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-                            &kp Q     &kp W       &kp E      &kp R      &kp T          &kp Y      &kp U       &kp I     &kp O     &kp P
+                        //│          │          │          │          │          │   │          │          │          │          │          │
+                            &none      &none      &none      &none      &none          &none      &none       &none     &none     &none
                         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
-                        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │SINGLE QT │
-                            &kp A     &kp S       &kp D      &kp F      &kp G          &kp H      &kp J       &kp K     &kp L     &kp '
+                        //│  L. GUI  │ L. ALT   │ L. CTL   │ L. SHIFT │          │   │          │  PREVIOUS│  VOL +   │  VOL -   │ NEXT     │
+                            &kp LGUI   &kp LALT   &kp LCTL   &kp LSHFT   &none         &none     &kp K_PREV  &kp K_VOL_UP &kp K_VOL_DN &kp K_NEXT
                         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
-                        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  COMMA   │  PERIOD  │F. SLASH  │
-                            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M       &kp COMMA &kp DOT   &kp FSLH
+                        //│          │          │          │          │          │   │  BT CLR  │  BT 0    │  BT 1    │  BT 2    │ BT 3     │
+                            &none      &none      &none      &none      &none        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
                         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        //                      │ L1 & ESC │ L2 & SPC │ L3 & TAB │   │ L4 & ENT │ L5 & BSPC│ L6 & DEL │   
-                                                 &lt 1 ESC  &lt 2 SPC  &lt 3 TAB      &lt 4 ENT  &lt 5 BSPC  &lt 6 DEL
+                        //                      │          │          │          │   │ STOP     │PLAY PAUSE│ MUTE     │   
+                                                  &none        &none      &none      &kp K_STOP  &kp K_MUTE &kp K_PP
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
