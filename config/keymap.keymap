@@ -39,7 +39,7 @@
         };
     };
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,keymap"; 
                 base_layer { //layer 0
                         display-name = "Base";
                         bindings = <
