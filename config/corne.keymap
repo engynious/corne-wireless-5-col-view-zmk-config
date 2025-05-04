@@ -54,7 +54,8 @@
                             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH
                         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         //                      │ L1 & ESC │ L2 & SPC │ L3 & TAB │   │ L4 & ENT │ L5 & BSPC│ L6 & DEL │                                          
-                                                 &lt 1 ESC  &lt 2 SPC  &lt 3 TAB      &lt 4 ENT  &lt 5 BSPC  &lt 6 DEL 
+                                                // &lt 1 ESC  &lt 2 SPC  &lt 3 TAB      &lt 4 ENT  &lt 5 BSPC  &lt 6 DEL 
+                                                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                     >;    
                 };
