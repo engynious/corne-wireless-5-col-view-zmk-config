@@ -58,7 +58,6 @@
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;                        
                 };
-asdflkjasdf'lkjasdlf'
                 media_layer { 
                         display-name = "Media"; // layer 1
                         bindings = <
@@ -77,7 +76,6 @@ asdflkjasdf'lkjasdlf'
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
-
                 nav_layer { 
                         display-name = "Nav"; // layer 2
                         bindings = <
@@ -132,7 +130,6 @@ asdflkjasdf'lkjasdlf'
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
-
                 number_layer { 
                         display-name = "Num"; // layer 5
                         bindings = <
@@ -151,7 +148,6 @@ asdflkjasdf'lkjasdlf'
                         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
-
                 function_layer { 
                         display-name = "FNC"; // layer 6
                         bindings = <
