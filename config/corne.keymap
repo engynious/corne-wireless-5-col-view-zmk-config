@@ -43,68 +43,131 @@
                 base_layer { 
                         display-name = "Base"; // layer 0
                         bindings = <
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
                             &kp Q     &kp W       &kp E      &kp R      &kp T          &kp Y      &kp U       &kp I     &kp O     &kp P
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
                             &hml LSHFT A &hml LALT S &hml LCTL D &hml RSHFT F &kp G    &kp H &hmr RSHFT J &hmr RCTL K &hmr RALT L &hmr RGUI APOS
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │ . >      │ / ?      │
                             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH
-                                                 &lt 1 ESC  &lt 2 SPACE  &lt 3 TAB      &lt 4 RET  &lt 5 BSPC  &lt 6 DEL 
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │ L1 & ESC │ L2 & SPC │ L3 & TAB │   │ L4 & RET │ L5 & BSPC│ L6 & DEL │                                          
+                                                 &lt 1 ESC  &lt 2 SPACE &lt 3 TAB      &lt 4 RET  &lt 5 BSPC &lt 6 DEL 
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;                        
                 };
-
+asdflkjasdf'lkjasdlf'
                 media_layer { 
                         display-name = "Media"; // layer 1
                         bindings = <
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│          │          │          │          │          │   │          │          │          │          │          │
                             &none      &none      &none      &none      &none          &none      &none       &none     &none     &none
-                            &kp LGUI   &kp LALT   &kp LCTL   &kp LSHFT   &none         &none     &kp C_PREV  &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│  L. GUI  │ L. ALT   │ L. CTL   │ L. SHIFT │          │   │          │  PREVIOUS│  VOL -   │  VOL +   │ NEXT     │
+                            &kp LGUI   &kp LALT   &kp LCTL   &kp LSHFT   &none         &none     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│          │          │          │          │          │   │  BT CLR  │  BT 0    │  BT 1    │  BT 2    │ BT 3     │
                             &none      &none      &none      &none      &none        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │          │          │          │   │ STOP     │PLAY PAUSE│ MUTE     │   
                                                   &none        &none      &none      &kp C_STOP  &kp C_MUTE &kp C_PP
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
 
                 nav_layer { 
                         display-name = "Nav"; // layer 2
                         bindings = <
-                            &none      &none      &none      &none      &none          &kp K_REDO &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│          │          │          │          │          │   │  REDO    │ PASTE    | COPY     │ CUT      │ UNDO     │
+                            &none      &none      &none      &none      &none          &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│  L. GUI  │ L. ALT   │ L. CTL   │ L. SHIFT │          │   │ CAPS     │ LEFT     │ DOWN     │ UP       │ RIGHT    │
                             &kp LGUI   &kp LALT   &kp LCTL   &kp LSHFT  &none          &kp CAPS   &kp LEFT &kp DOWN &kp UP &kp RIGHT
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│          │          │          │          │          │   │ INSERT   │ HOME     │ PAGE DOWN│ PAGE UP  │ END      │
                             &none      &none      &none      &none      &none          &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │          │          │          │   │ ENTER    │ BACKSPACE│ DELETE   │   
                                                   &none      &none      &none          &kp RET    &kp BSPC   &kp DEL
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
                 mouse_layer { 
                         display-name = "Mouse"; // layer 3
                         bindings = <
-                            &none      &none      &none      &none      &none         &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│          │          │          │          │          │   │  REDO    │ PASTE    | COPY     │ CUT      │ UNDO     │
+                            &none      &none      &none      &none      &none         &kp C_AC_REDO &kp C_AC_PASTE &kp C_AC_COPY &kp C_AC_CUT &kp C_AC_UNDO
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│  L. GUI  │ L. ALT   │ L. CTL   │ L. SHIFT │          │   │          │  LEFT    │ DOWN     │ UP       │ RIGHT    │
                             &kp LGUI   &kp LALT   &kp LCTL   &kp LSHFT   &none         &none     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│          │          │          │          │          │   │          │SCRL LEFT │SCRL DOWN │SCRL UP   │SCRL RIGHT│
                             &none      &none      &none      &none      &none          &none     &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │          │          │          │   │ R. CLICK │ L. CLICK │ MID CLICK│                           
                                                   &none        &none      &none       &mkp RCLK  &mkp LCLK &mkp MCLK
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
                 macro_layer { 
                         display-name = "Macro"; // layer 4
                         bindings = <
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│          │          │          │          │          │   │          │          │          │          │          │
                             &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│          │          │          │          │          │   │          │          │          │          │          │
                             &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│          │          │          │          │          │   │          │          │          │          │          │
                             &none      &none      &none      &none      &none          &none      &none      &none      &none      &none
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │          │          │          │   │          │          │          │   
                                                  &none      &none      &none           &none      &none      &none
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
 
                 number_layer { 
                         display-name = "Num"; // layer 5
                         bindings = <
-                            &kp LBKT   &kp N7      &kp N8     &kp N9    &kp RBKT       &none      &none      &none      &none      &none     
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│ [       │ 7 &      │ 8 *      │ 9 (      │ ]       │   │          │          │          │          │          │
+                            &kp LBKT   &kp N7      &kp N8     &kp N9    &kp RBKT       &none      &none      &none      &none      &none   
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│ ; :      │ 4 $      │ 5 %      │ 6 ^      │ = +      │   │          │ R. SHIFT │  R. CTL  │ R. ALT   │ R. GUI   │  
                             &kp SEMI   &kp N4      &kp N5     &kp N6   &kp EQUAL       &none      &kp RSHFT &kp RCTL   &kp RALT   &kp RGUI
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│ ` ~      │ 1 !      │ 2 @      │ 3 #      │ \ |      │   │          │          │          │          │          │
                             &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp BSLH       &none      &none      &none      &none      &none    
-                                                  &kp DOT    &kp N0     &kp MINUS      &none      &none      &none
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │ . >      │ 0 )      │ - _      │   │          │          │          │   
+                                                  &kp DOT    &kp N0     &kp MINUS      &none      &trans      &none
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
 
                 function_layer { 
                         display-name = "FNC"; // layer 6
                         bindings = <
-                            &kp F12    &kp F7     &kp F8     &kp F9     &kp PSCRN      &none      &none      &none      &none      &none      
+                        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+                        //│ F12      │ F7       │ F8       │ F9       │ PrintSC  │   │          │          │          │          │          │
+                            &kp F12    &kp F7     &kp F8     &kp F9     &kp PSCRN      &none      &none      &none      &none      &none     
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│ F11      │ F4       │ F5       │ F6       │ SCRL LCK │   │          │ R. SHIFT │ R. CTL   │ R. ALT   │ R. GUI   │ 
                             &kp F11    &kp F4     &kp F5     &kp F6     &kp LSLCK      &none      &kp RSHFT  &kp RCTL   &kp RALT   &kp RGUI
+                        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────
+                        //│ F10      │ F1       │ F2       │ F3       │ PAUSE BRK│   │          │          │          │          │          │
                             &kp F10    &kp F1     &kp F2     &kp F3     &kp PAUSE_BREAK &none     &none      &none      &none      &none
+                        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        //                      │ ESC      │ SPC      │ TAB      │   │          │          │          │  
                                                  &kp ESC     &kp SPACE    &kp TAB        &none      &none      &none
+                        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
         };
