@@ -47,13 +47,6 @@
                 &kp N9 &kp N1
             >;
         };
-        pw_macro: pw_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &kp D &kp H &kp A &kp d &kp h &kp a &kp N1 &kp N2 &kp N3 &kp EXCL &kp AT &kp HASH &kp N2 &kp N0 &kp N2 &kp N5
-            >;
-        };
                 };
 
     };
